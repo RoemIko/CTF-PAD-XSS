@@ -1,0 +1,39 @@
+version: "3.3"
+services:
+    apache:
+        build: .
+        ports:
+            - 80:80
+            - 433:433
+        volumes:
+            - ./Forum:/var/www/html/
+        links:
+            - mysql:mysql
+        networks:
+            - default
+    mysql:
+        image: mysql:8.0
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_DATABASE: Forum
+            MYSQL_USER: Aiden
+            MYSQL_PASSWORD: PAD
+            MYSQL_ROOT_PASSWORD: root
+        restart: always
+        volumes:
+            - ./dump:/docker-entrypoint-initdb.d
+            - persistent:/var/lib/mysql
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - mysql:mysql
+        ports:
+            - 8080:80
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+volumes:
+   persistent:
