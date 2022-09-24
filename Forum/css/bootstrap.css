@@ -1,0 +1,277 @@
+body {/*CSS for the whole page*/
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+.result {
+  color: white;
+}
+#header {/*CSS for the whole header*/
+  background-color: white;
+  height: 50px;
+  width: 99%;
+  border: 5px solid red;
+}
+
+#headernav {/*CSS for nav items in the header*/
+  float: left;
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+.home {/*CSS for "PAD9 Forum" home link*/
+  text-decoration: none;
+  color: red;
+  font-size: 30px;
+}
+
+#search {/*CSS for searchbar and searchbutton*/
+  float: right;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+.searchbar {/*CSS for searchbar only*/
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.searchbutton {/*CSS for search button only*/
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.searchbutton:hover {/*CSS for searchbutton when hovering*/
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+}
+
+#navbar{/*CSS for navbar*/
+  text-align: center;
+  line-height:30px;
+}
+  
+#navbar li {
+  list-style:none;
+  margin: 0 5px;
+  display:inline;   
+}
+
+#navbar li a{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  text-align: center;
+  color: red;
+  text-decoration: none;
+  border-right: 3px solid black;
+}
+
+#navbar li a:hover {
+  background-color: red;
+  color: white;
+}
+
+#navbar li a.active {
+  background-color: red;
+  color: white;
+}
+
+#navbar li a.disabled {
+  background-color: grey;
+  color: black;
+}
+/*CSS for "content" div */
+#content {
+  width: 60%;
+  margin: auto;
+}
+/*CSS for topic navigation*/
+#topic_nav ul {
+  width: 100%;
+}
+
+#topic_nav li {
+  list-style: none;
+  margin: 30px;
+}
+
+#topic_nav li a {
+  padding-left: 5%;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  color: red;
+  text-decoration: none;
+  border-right: 3px solid black;
+  display: block;
+}
+
+#topic_nav li a:hover {
+  background-color: red;
+  color: white;
+}
+/*CSS for posts*/
+#post {
+  background-color: white;
+  border: 3px solid red;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+/*CSS for replies*/
+#replies {
+  background-color: white;
+  border: 3px solid red;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, td {
+  border: 3px solid red;
+  background-color: white;
+  height: 50px;
+}
+
+/*CSS for reply input*/
+#reply_input {
+  width: 90%;
+  height: 50px;
+  text-align: left;
+}
+
+#reply_button {
+  width: 70px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+#reply_button:hover {
+  background-color: white;
+  color: red;
+}
+
+/*CSS for check form*/
+#check {
+  text-align: center;
+  background-color: white;
+  border: 3px solid red;
+  border-radius: 3px;
+  padding: 10px;
+  width: 60%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#check_button {
+  width: 70px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+/*CSS optimalization for different window sizes*/
+@media only screen and (max-width:600px){
+
+  #header {
+      height: 100px;
+  }
+
+  #search {
+      float: left;
+      margin-left: 5px;
+  }
+
+  .searchbar {
+      float: left;
+      width: 300px;
+  }
+
+  .searchbutton {
+      margin-left: 10px;
+  }
+
+  #content {
+      width: 100%;
+  }
+
+  #navbar {
+      line-height: 40px;
+      margin-left: -30px;
+  }
+
+  #navbar li {
+      list-style: none;
+      margin: 0px;
+  }
+  
+  #navbar li a {
+      padding-left: 5%;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      background-color: white;
+      color: red;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+  #topic_nav ul {
+      width: 95%;
+      margin-left: -10px;
+  }
+  
+  #topic_nav li {
+      list-style: none;
+      margin: 15px;
+  }
+  
+  #topic_nav li a {
+      padding-left: 5%;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: white;
+      color: red;
+      text-decoration: none;
+      border-right: 3px solid black;
+      display: block;
+  }
+  
+  #topic_nav li a:hover {
+      background-color: red;
+      color: white;
+  }
+
+  #check {
+    width: auto;
+  }
+
+  @media only screen and (max-width:400px){
+      .searchbar {
+          width: 150px;
+      }
+    }}

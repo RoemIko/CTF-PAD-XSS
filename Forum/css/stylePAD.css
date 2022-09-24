@@ -1,0 +1,42 @@
+body{
+  background-image: url("https://www.arcgis.com/sharing/rest/content/items/f32750b3db37402086ada8aa04898f3d/resources/1570461099424.jpeg?w=3117");
+  background: repeat 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Calibri;
+}
+
+.loginbox{
+text-align: center;
+color: #c60000;
+background: rgb(0, 0, 0, 0.8);
+margin-right: 35%;
+margin-left: 35%;
+margin-top: 14%;
+padding-top: 10px;
+padding-bottom: 10px;
+border-style: ridge;
+border-color:  #333333;
+}
+.formCSS{
+width: 50%;
+padding: 10px 10px;
+text-align: center;
+border: ridge;
+border-color: black;
+background: white;
+color: black;
+}
+.innerLogin input[type="submit"]{
+color: #c60000;
+margin-top: 7%;
+background-color: black;
+padding: 3% 21%;
+border: outset;
+font-weight: bold;
+border-color: #333333;
+}
+.innerLogin input[type="submit"]:hover{
+cursor: pointer;
+background:url("https://www.elisascience.org/files/styles/keyimage/public/images/Star-field-hubble-deep.JPG?itok=2E5GnO3H") no-repeat;
+}
